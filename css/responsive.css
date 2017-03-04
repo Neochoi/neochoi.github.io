@@ -1,0 +1,38 @@
+@media screen and (max-width:300px) {
+  table tr td{
+    display: block;
+
+  }
+  table{
+    width:100%;
+  }
+.title{
+  position: absolute;
+  top: -9999px;
+  left:-9999px;
+}
+  td{
+    position: relative;
+    padding-left: 100%;
+  }
+  td::before{
+    position: absolute;
+    left: 1px;
+    content: attr(data-th);
+    font-weight: bold;
+  }
+  .longName
+  {
+    display: none;
+  }
+  /*.inning
+  {
+    display: none;
+  }*/
+}
+@media screen and (min-width:300px) {
+  .shortName
+  {
+    display: none;
+  }
+}
